@@ -1,20 +1,18 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Gymo Academia
 
-# Run and deploy your AI Studio app
+Gymo Academia is a modern fitness application built with React, Vite, and Tailwind CSS.
 
-This contains everything you need to run your app locally.
+## Adding Images
 
-View your app in AI Studio: https://ai.studio/apps/bc44257e-fb01-41aa-89ac-c9da95387478
+To add images to the application:
 
-## Run Locally
+1.  Go to the `public/images/` folder in this repository.
+2.  Click the **Add file** button and select **Upload files**.
+3.  Upload your image files (e.g., `logo.png`, `boxe.jpg`, etc.).
+4.  Ensure the filenames match the ones used in the code.
 
-**Prerequisites:**  Node.js
+The application is configured to look for images at `/images/your-image.jpg`.
 
+## Deployment
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+This application is configured for deployment to GitHub Pages. Ensure the `base` property in `vite.config.ts` is set correctly for your deployment environment.
