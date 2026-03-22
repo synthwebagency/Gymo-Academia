@@ -6,3 +6,5 @@ coverage/
 *.log
 .env*
 !.env.example
+# Ignore images for GitHub sync (user will upload them manually to GitHub)
+public/images/
