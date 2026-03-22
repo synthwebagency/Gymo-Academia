@@ -33,7 +33,7 @@ const Musculacao: React.FC = () => {
           {/* Image Placeholder */}
           <div className="max-w-5xl mx-auto aspect-video bg-zinc-900 border border-white/5 flex items-center justify-center group overflow-hidden">
             <img 
-              src="/images/musculacao-hero.jpg" 
+              src={`${import.meta.env.BASE_URL}images/musculacao-hero.jpg`} 
               alt="Musculação Gymo" 
               className="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity duration-700"
               referrerPolicy="no-referrer"

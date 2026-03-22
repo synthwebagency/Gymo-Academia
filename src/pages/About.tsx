@@ -75,7 +75,7 @@ const About: React.FC = () => {
           >
             <div className="aspect-video bg-zinc-900 border border-white/10 overflow-hidden">
               <img
-                src="/images/mission.jpg"
+                src={`${import.meta.env.BASE_URL}images/mission.jpg`}
                 alt="Missão Gymo"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 referrerPolicy="no-referrer"

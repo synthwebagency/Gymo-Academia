@@ -33,7 +33,7 @@ const Boxe: React.FC = () => {
           
           <div className="relative aspect-square bg-zinc-900 border border-white/5 flex items-center justify-center overflow-hidden">
             <img 
-              src="/images/boxe-team.jpg" 
+              src={`${import.meta.env.BASE_URL}images/boxe-team.jpg`} 
               alt="Equipa de Boxe" 
               className="w-full h-full object-cover opacity-60"
               referrerPolicy="no-referrer"
@@ -83,7 +83,7 @@ const Boxe: React.FC = () => {
           <h3 className="text-2xl font-black text-white uppercase tracking-tight mb-12">Treino e Competição</h3>
           <div className="aspect-video bg-zinc-900 border border-white/5 flex items-center justify-center overflow-hidden">
             <img 
-              src="/images/boxe-training.jpg" 
+              src={`${import.meta.env.BASE_URL}images/boxe-training.jpg`} 
               alt="Treino de Boxe" 
               className="w-full h-full object-cover opacity-60"
               referrerPolicy="no-referrer"

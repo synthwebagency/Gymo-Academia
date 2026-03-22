@@ -29,7 +29,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
               <img 
-                src="/images/logo.png" 
+                src={`${import.meta.env.BASE_URL}images/logo.png`} 
                 alt="Gymo Logo" 
                 className="h-12 w-auto object-contain"
                 referrerPolicy="no-referrer"

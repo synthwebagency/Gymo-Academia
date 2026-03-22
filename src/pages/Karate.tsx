@@ -46,7 +46,7 @@ const Karate: React.FC = () => {
           >
             <div className="aspect-video bg-zinc-900 border border-white/10 overflow-hidden">
               <img
-                src="/images/karate-page.jpg"
+                src={`${import.meta.env.BASE_URL}images/karate-page.jpg`}
                 alt="Karate Gymo"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 referrerPolicy="no-referrer"

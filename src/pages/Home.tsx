@@ -8,31 +8,31 @@ const Home: React.FC = () => {
 
   const slides = [
     {
-      image: '/images/boxe.jpg',
+      image: `${import.meta.env.BASE_URL}images/boxe.jpg`,
       title: 'BOXE',
       subtitle: 'Disciplina e Força',
       description: 'Treinos intensos que desenvolvem o corpo e a mente.',
     },
     {
-      image: '/images/futebol.jpg',
+      image: `${import.meta.env.BASE_URL}images/futebol.jpg`,
       title: 'FUTEBOL',
       subtitle: 'Trabalho em Equipa',
       description: 'A paixão pelo jogo em um ambiente de respeito e amizade.',
     },
     {
-      image: '/images/karate.jpg',
+      image: `${import.meta.env.BASE_URL}images/karate.jpg`,
       title: 'KARATE',
       subtitle: 'Foco e Autocontrole',
       description: 'Arte marcial milenar para todas as idades.',
     },
     {
-      image: '/images/voleibol.jpg',
+      image: `${import.meta.env.BASE_URL}images/voleibol.jpg`,
       title: 'VOLEIBOL',
       subtitle: 'Agilidade e Cooperação',
       description: 'Dinâmica de grupo e coordenação superior.',
     },
     {
-      image: '/images/basquetebol.jpg',
+      image: `${import.meta.env.BASE_URL}images/basquetebol.jpg`,
       title: 'BASQUETEBOL',
       subtitle: 'Precisão e Estratégia',
       description: 'Desenvolva suas habilidades na quadra.',
@@ -150,7 +150,7 @@ const Home: React.FC = () => {
             <div className="relative">
               <div className="aspect-square bg-zinc-900 border border-white/5 overflow-hidden">
                 <img
-                  src="/images/gym-family.jpg"
+                  src={`${import.meta.env.BASE_URL}images/gym-family.jpg`}
                   alt="Ambiente Gymo"
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                   referrerPolicy="no-referrer"
