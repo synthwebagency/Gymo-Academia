@@ -33,14 +33,10 @@ const Boxe: React.FC = () => {
           
           <div className="relative aspect-square bg-zinc-900 border border-white/5 flex items-center justify-center overflow-hidden">
             <img 
-              src={`${import.meta.env.BASE_URL}images/boxe-team.jpg`} 
+              src="/images/boxe-team.jpg" 
               alt="Equipa de Boxe" 
               className="w-full h-full object-cover opacity-60"
               referrerPolicy="no-referrer"
-              onError={(e) => {
-                e.currentTarget.style.display = 'none';
-                e.currentTarget.parentElement!.innerHTML = '<div class="text-center p-8"><span class="text-gray-700 font-black text-xl uppercase tracking-widest">Espaço para Imagem da Equipa de Boxe</span></div>';
-              }}
             />
           </div>
         </div>
@@ -81,18 +77,14 @@ const Boxe: React.FC = () => {
         {/* Training Image Placeholder */}
         <div className="text-center mb-16">
           <h3 className="text-2xl font-black text-white uppercase tracking-tight mb-12">Treino e Competição</h3>
-          <div className="aspect-video bg-zinc-900 border border-white/5 flex items-center justify-center overflow-hidden">
-            <img 
-              src={`${import.meta.env.BASE_URL}images/boxe-training.jpg`} 
-              alt="Treino de Boxe" 
-              className="w-full h-full object-cover opacity-60"
-              referrerPolicy="no-referrer"
-              onError={(e) => {
-                e.currentTarget.style.display = 'none';
-                e.currentTarget.parentElement!.innerHTML = '<span class="text-gray-700 font-black text-2xl uppercase tracking-widest">Espaço para Imagem de Treino/Competição</span>';
-              }}
-            />
-          </div>
+        <div className="aspect-video bg-zinc-900 border border-white/5 flex items-center justify-center overflow-hidden">
+          <img 
+            src="/images/boxe-training.jpg" 
+            alt="Treino de Boxe" 
+            className="w-full h-full object-cover opacity-60"
+            referrerPolicy="no-referrer"
+          />
+        </div>
         </div>
 
         {/* Benefits Grid */}

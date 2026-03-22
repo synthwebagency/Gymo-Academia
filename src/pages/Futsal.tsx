@@ -18,14 +18,10 @@ const Futsal: React.FC = () => {
         {/* Hero Image Placeholder */}
         <div className="aspect-video bg-zinc-900 border border-white/5 flex items-center justify-center overflow-hidden mb-24">
           <img 
-            src={`${import.meta.env.BASE_URL}images/futsal-hero.jpg`} 
+            src="/images/futsal-hero.jpg" 
             alt="Futsal Gymo" 
             className="w-full h-full object-cover opacity-60"
             referrerPolicy="no-referrer"
-            onError={(e) => {
-              e.currentTarget.style.display = 'none';
-              e.currentTarget.parentElement!.innerHTML = '<span class="text-gray-700 font-black text-2xl uppercase tracking-widest">Espaço para Imagem de Futsal</span>';
-            }}
           />
         </div>
 
@@ -68,18 +64,14 @@ const Futsal: React.FC = () => {
         {/* Team Image Placeholder */}
         <div className="text-center mb-16">
           <h3 className="text-2xl font-black text-white uppercase tracking-tight mb-12">Nossa Equipa</h3>
-          <div className="aspect-video bg-zinc-900 border border-white/5 flex items-center justify-center overflow-hidden">
-            <img 
-              src={`${import.meta.env.BASE_URL}images/futsal-team.jpg`} 
-              alt="Equipa de Futsal" 
-              className="w-full h-full object-cover opacity-60"
-              referrerPolicy="no-referrer"
-              onError={(e) => {
-                e.currentTarget.style.display = 'none';
-                e.currentTarget.parentElement!.innerHTML = '<span class="text-gray-700 font-black text-2xl uppercase tracking-widest">Espaço para Imagem da Equipa de Futsal</span>';
-              }}
-            />
-          </div>
+        <div className="aspect-video bg-zinc-900 border border-white/5 flex items-center justify-center overflow-hidden">
+          <img 
+            src="/images/futsal-team.jpg" 
+            alt="Equipa de Futsal" 
+            className="w-full h-full object-cover opacity-60"
+            referrerPolicy="no-referrer"
+          />
+        </div>
         </div>
       </div>
     </div>
